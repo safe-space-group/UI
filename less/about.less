@@ -1,0 +1,35 @@
+.about-images-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    @media @mobile {
+        align-items: center;
+        flex-direction: column;
+    }
+    .about-image-container {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    
+    img {
+        border: 5px #881600 solid;
+        border-radius: 15%;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 20px;
+        @media @tablet {
+            width: 90%;
+            height: 230px;
+        }
+    }
+    span {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        font-size: 24px;
+        @media @mobile {
+            margin-bottom: 30px;
+        }
+    }
+}
