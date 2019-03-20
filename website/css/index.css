@@ -133,6 +133,15 @@ a {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 380px) {
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navigation li {
+    margin: 10px;
+  }
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -142,6 +151,11 @@ a {
   margin-top: 200px;
   margin-bottom: 10px;
   font-size: 48px;
+}
+@media (max-width: 380px) {
+  .container h1 {
+    margin-top: 100px;
+  }
 }
 .container p {
   font-size: 20px;
@@ -154,14 +168,36 @@ a {
   align-items: center;
   margin-bottom: 200px;
 }
+@media (max-width: 1030px) {
+  .cta {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 380px) {
+  .cta {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
 .cta h2 {
   font-size: 24px;
   margin-bottom: 80px;
+}
+@media (max-width: 380px) {
+  .cta h2 {
+    margin-bottom: 40px;
+  }
 }
 .cta .images-container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 380px) {
+  .cta .images-container {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .cta .images-container .image-container {
   display: flex;
@@ -177,8 +213,14 @@ a {
 }
 .cta .images-container p {
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-.cta .btn {
+@media (max-width: 380px) {
+  .cta .images-container p {
+    margin-bottom: 30px;
+  }
+}
+.btn {
   padding-top: 10px;
   margin-top: 80px;
   border: 2px #881600 solid;
@@ -187,4 +229,44 @@ a {
   background-color: #E3E36A;
   display: flex;
   justify-content: center;
+}
+.about-images-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 380px) {
+  .about-images-container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.about-images-container .about-image-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.about-images-container img {
+  border: 5px #881600 solid;
+  border-radius: 15%;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media (max-width: 1030px) {
+  .about-images-container img {
+    width: 90%;
+    height: 230px;
+  }
+}
+.about-images-container span {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 24px;
+}
+@media (max-width: 380px) {
+  .about-images-container span {
+    margin-bottom: 30px;
+  }
 }
