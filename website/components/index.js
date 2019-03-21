@@ -20,29 +20,6 @@ function createNavigationEl(className, href, text) {
     });
 }
 
-/*
-                     <li>
-                         <a class="fas fa-home" href="index.html">
-                             <span>Introduction</span>
-                         </a>
-                     </li>
-                     <li>
-                         <a class="fas fa-users" href="about.html">
-                             <span>About Us</span>
-                         </a>
-                     </li>
-                     <li>
-                         <a class="fas fa-plus" href="#create">
-                             <span>Create Account</span>
-                         </a>
-                     </li>
-                     <li>
-                         <a class="fas fa-laptop" href="#login">
-                             <span>Login</span>
-                         </a>
-                     </li> 
-*/
-
 createNavigationEl("fas fa-home", "index.html", "Introduction");
 createNavigationEl("fas fa-users", "about.html", "About Us");
 createNavigationEl("fas fa-plus", "#create", "Create Account");
